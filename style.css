@@ -40,3 +40,13 @@ body {
 #myTask:focus {
     border: 2px solid red;
 }
+
+.container button {
+    padding: 10px 20px;
+    background-color: #100146;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
