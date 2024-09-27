@@ -16,7 +16,17 @@ function toDoTask() {
         myTaskList.removeChild(li);
     };
 
-   
+    li.onclick = function () {
+        li.classList.toggle('completed');
+    };
+
+    //listed task are removed
+    li.appendChild(removeButton);
+
+    myTaskList.appendChild(li);
+
+    //this statement clear the input task area
+    myTask.value = '';
 
 
 }
