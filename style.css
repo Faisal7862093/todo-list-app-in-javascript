@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
     border: 2px solid red;
 }
 
-.container button {
+#add {
     padding: 10px 20px;
     background-color: #100146;
     color: #fff;
@@ -51,58 +52,54 @@ body {
     margin-left: 10px;
 }
 
-.container button:hover {
+#add:hover {
     background-color: #4B00FD;
 }
 
-/* li {
-    background-color: gray;
-    color: black;
-    padding: 10px;
-} */
 ul {
-    list-style-type: none;
     padding: 0;
-    max-height: 200px;
-    /* Limit the height of the task list */
-    overflow-y: auto;
-    /* Enable vertical scrolling */
-    margin-bottom: 10px;
+    max-height: 150px;
+    list-style-type: none;
+    margin-bottom: 20px;
+    overflow: auto;
 }
 
 li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 10px;
+    background-color: #cfcdcd;
+    border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
     margin-bottom: 5px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s;
+
 }
 
-li:hover {
-    background-color: #e9e9e9;
-}
 
 /* Completed tasks */
 .completed {
-    text-decoration: line-through;
-    color: grey;
+    background-color: #ff6b6b;
 }
 
 /* Remove button styling */
-.remove-btn {
-    background-color: #ff6b6b;
-    border: none;
-    padding: 5px 10px;
+.remove-button {
+    background-color: #100146;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 10px 10px;
     color: white;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.remove-btn:hover {
-    background-color: #d9534f;
+.remove-button:hover {
+    background-color: #4B00FD;
+}
+
+@media(max-width:500px) {
+    .container {
+        margin: 0px 10px;
+    }
 }

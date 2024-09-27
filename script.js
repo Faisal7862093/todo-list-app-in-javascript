@@ -11,7 +11,7 @@ function toDoTask() {
 
     var removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.className = 'remove-btn';
+    removeButton.className = 'remove-button';
     removeButton.onclick = function () {
         myTaskList.removeChild(li);
     };
